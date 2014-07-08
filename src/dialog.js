@@ -4,7 +4,8 @@
  * @ignore
  */
 
-var Overlay = require('./overlay'),
+var $ = require('jquery'),
+  Overlay = require('./overlay'),
   UIBase = BUI.Component.UIBase,
   CLS_TITLE = 'header-title',
   PREFIX = BUI.prefix,

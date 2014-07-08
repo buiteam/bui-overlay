@@ -4,7 +4,8 @@
  * @ignore
  */
 
-var Dialog = require('./dialog'),
+var $ = require('jquery'),
+  Dialog = require('./dialog'),
   PREFIX = BUI.prefix,
   iconText ={
       info : 'i',
