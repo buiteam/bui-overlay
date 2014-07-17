@@ -1,4 +1,4 @@
-define("bui-overlay/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/src/overlay-debug", "bui-overlay/1.1.0/src/dialog-debug", "bui-overlay/1.1.0/src/message-debug"], function(require, exports, module) {
+define("bui-overlay/1.1.0/index-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/src/overlay-debug", "bui-overlay/1.1.0/src/dialog-debug", "bui-overlay/1.1.0/src/message-debug"], function(require, exports, module) {
   /**
    * @fileOverview Overlay 模块的入口
    * @ignore
@@ -17,12 +17,12 @@ define("bui-overlay/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-commo
   BUI.Message = BUI.Overlay.Message;
   module.exports = Overlay;
 });
-define("bui-overlay/1.1.0/src/overlay-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-overlay/1.1.0/src/overlay-debug", ["jquery", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 悬浮层
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Component = BUI.Component,
     CLS_ARROW = 'x-align-arrow',
@@ -248,13 +248,13 @@ define("bui-overlay/1.1.0/src/overlay-debug", ["jquery/1.9.1/jquery-debug", "bui
   overlay.View = overlayView;
   module.exports = overlay;
 });
-define("bui-overlay/1.1.0/src/dialog-debug", ["jquery/1.9.1/jquery-debug", "bui-overlay/1.1.0/src/overlay-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-overlay/1.1.0/src/dialog-debug", ["jquery", "bui-overlay/1.1.0/src/overlay-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 弹出框
    * @author dxq613@gmail.com
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Overlay = require("bui-overlay/1.1.0/src/overlay-debug"),
     UIBase = BUI.Component.UIBase,
     CLS_TITLE = 'header-title',
@@ -582,13 +582,13 @@ define("bui-overlay/1.1.0/src/dialog-debug", ["jquery/1.9.1/jquery-debug", "bui-
   dialog.View = dialogView;
   module.exports = dialog;
 });
-define("bui-overlay/1.1.0/src/message-debug", ["jquery/1.9.1/jquery-debug", "bui-overlay/1.1.0/src/dialog-debug", "bui-overlay/1.1.0/src/overlay-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-overlay/1.1.0/src/message-debug", ["jquery", "bui-overlay/1.1.0/src/dialog-debug", "bui-overlay/1.1.0/src/overlay-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 消息框，警告、确认
    * @author dxq613@gmail.com
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Dialog = require("bui-overlay/1.1.0/src/dialog-debug"),
     PREFIX = BUI.prefix,
     iconText = {
